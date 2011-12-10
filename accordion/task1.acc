@@ -1,0 +1,16 @@
+As an assistive technology user
+I want to be able to use tabbing navigation in wepages
+So that I can navigate with no use of mouse devices
+
+Scenario 1 - Clicking in the sports item and then click in the tenis link (Accordion - Task1)
+Given
+    I go to "http://watinha.com/pyccuracy_test_1/templates/accordion/task1.html"
+    And I wait for the page to load
+When
+    I tab navigate to "Sports" element
+    And I press enter
+    And I tab navigate to "Tenis" element
+    And I press enter
+Then
+    I wait for the page to load
+    I see "Tennis - Wikipedia, the free encyclopedia" title

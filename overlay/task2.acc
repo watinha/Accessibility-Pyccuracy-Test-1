@@ -1,0 +1,16 @@
+As an assistive technology user
+I want to be able to use tabbing navigation in wepages
+So that I can navigate with no use of mouse devices
+
+Scenario 1 - Find and click the dog link showed next (overlay - Task 2)
+Given
+    I go to "http://watinha.com/pyccuracy_test_1/templates/overlay/task2.html"
+    And I wait for the page to load
+When
+    I tab navigate to "Europe" element
+    And I press enter
+    I tab navigate to "Spain" element
+    And I press enter
+Then
+    I wait for the page to load
+    I see "Spain - Wikipedia, the free encyclopedia" title

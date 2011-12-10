@@ -1,0 +1,16 @@
+As an assistive technology user
+I want to be able to use tabbing navigation in wepages
+So that I can navigate with no use of mouse devices
+
+Scenario 1 - Find and click the dog link showed next (tabbed_menu - Task 1)
+Given
+    I go to "http://watinha.com/pyccuracy_test_1/templates/tabbed_menu/task1.html"
+    And I wait for the page to load
+When
+    I tab navigate to "Contact info" element
+    And I press enter
+    I tab navigate to "email" element
+    And I press enter
+Then
+    I wait for the page to load
+    I see "Yahoo! Brasil" title

@@ -1,0 +1,22 @@
+As an assistive technology user
+I want to be able to use tabbing navigation in wepages
+So that I can navigate with no use of mouse devices
+
+Scenario 1 - Fill and submit the following form with the requested information (forms - Task2)
+Given
+    I go to "http://watinha.com/pyccuracy_test_1/templates/forms/task2.html"
+    And I wait for the page to load
+When
+    I tab navigate to "First Name" element
+    And I type "Willian"
+    And I tab navigate to "Last Name" element
+    And I type "Watanabe"
+    And I tab navigate to "Cel phone" element
+    And I type "83399159"
+    And I tab navigate to "Home address" element
+    And I type "Some cool address"
+    And I tab navigate to "submit" element
+    And I press enter
+Then
+    I wait for the page to load
+    I see "Form submited" title
