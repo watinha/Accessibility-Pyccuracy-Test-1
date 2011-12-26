@@ -12,4 +12,4 @@ When
     And I press enter
 Then
     I wait for the page to load
-    I see "Tennis - Canada, the free encyclopedia" title
+    I see "Canada - Wikipedia, the free encyclopedia" title
